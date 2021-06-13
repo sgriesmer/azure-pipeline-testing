@@ -1,17 +1,47 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+The purpose of this project is to create a Continuous Integration/Continuous Delivery (CI/CD) pipeline for a Python Machine Learning Flask application.  The application returns a prediction of a median housing price of a house in the Boston area given a set of input variables.
 
 ## Project Plan
-<TODO: Project Plan
+The project plan for the pipeline is described in a Trello board and spreadsheet:
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+Trello Board: https://urldefense.com/v3/__https://trello.com/b/fPufDYN5/azure-pipeline__;!!BhdT!1tKzq60elvX4JeWiTR_IXuGxxPS_GZg2Vrom05KtOiEh6-HJkbvgRfM7$
+Spreadsheet: * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+The CI/CD pipeline consists of two separate pieces: (1) A CI pipeline implemented using Github as a repository, Azure Cloud Shell as a workspace or jump server, and Github Actions Container as a SaaS build server; and (2) A CD pipeline that uses Github as a repository and Azure Pipelines as a deployment server, deploying the application as an Azure Web App.
+
+![CI/CD Pipeline Architecture](/images/arch.jpg)
+
+The steps for running the CI/CD pipeline to build and deploy the application are:
+
+(1) Create (or log into your Azure account).
+
+(2) Clone the project from Github
+
+Execute the command:
+
+git clone http://...
+
+(3) Install, lint, and test the application locally
+
+Execute the command:
+
+make install
+
+to install, lint, and test the application into the Github repository.
+
+Any code changes should pass tests.  The output of a successful test run should look like:
+
+![Test results after make all](/images/"screen slot of passed tests after make all".png)
+
+(4) Push code to Github and verify that lint and test pass remotely
+
+Execute the commmands:
+
+(5) 
+
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
