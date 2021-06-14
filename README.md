@@ -22,13 +22,18 @@ The steps for running the CI/CD pipeline to build and deploy the application are
 
 Execute the command:
 
-git clone http://...
+git clone https://github.com/sgriesmer/azure-pipeline.git
 
-(3) Install, lint, and test the application locally
+(3) Create Python Virtual Enviroment
+
+python3 -m env ~/.myrepo
+source ~/.myrepo/bin/activate
+
+(4) Install, lint, and test the application locally
 
 Execute the command:
 
-make install
+make all
 
 to install, lint, and test the application into the Github repository.
 
@@ -36,11 +41,13 @@ Any code changes should pass tests.  The output of a successful test run should 
 
 ![Test results after make all](/images/"screen slot of passed tests after make all".png)
 
-(4) Push code to Github and verify that lint and test pass remotely
+(5) Push code to Github and verify that lint and test pass remotely
 
 Execute the commmands:
 
-(5) 
+
+
+(6) 
 
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
