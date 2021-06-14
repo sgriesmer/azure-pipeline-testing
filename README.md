@@ -6,6 +6,7 @@ The purpose of this project is to create a Continuous Integration/Continuous Del
 The project plan for the pipeline is described in a Trello board and spreadsheet:
 
 Trello Board: https://urldefense.com/v3/__https://trello.com/b/fPufDYN5/azure-pipeline__;!!BhdT!1tKzq60elvX4JeWiTR_IXuGxxPS_GZg2Vrom05KtOiEh6-HJkbvgRfM7$
+
 Spreadsheet: * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
@@ -18,18 +19,24 @@ The steps for running the CI/CD pipeline to build and deploy the application are
 
 (1) Create (or log into your Azure account).
 
-(2) Clone the project from Github
+(2) Enter Azure Shell.
+
+(3) Create a Github repository for the project.  
+
+Enable Azure Pipelines
+
+(4) Clone the project from Github
 
 Execute the command:
 
 git clone https://github.com/sgriesmer/azure-pipeline.git
 
-(3) Create Python Virtual Enviroment
+(5) Create a Python virtual environment
 
 python3 -m env ~/.myrepo
 source ~/.myrepo/bin/activate
 
-(4) Install, lint, and test the application locally
+(6) Install, lint, and test the application locally
 
 Execute the command:
 
